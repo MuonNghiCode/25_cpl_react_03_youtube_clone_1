@@ -6,9 +6,34 @@
   margin-top: 15px;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
 .card img {
   width: 100%;
   border-radius: 5px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+}
+
+.card .icon {
+  margin-right: 10px;
+}
+
+.card-content-text {
+  display: flex;
+  flex-direction: column;
 }
 
 .card h2 {
