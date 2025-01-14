@@ -25,25 +25,34 @@ import question from "../../assets/icons8-question-50.png";
 import message from "../../assets/message.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
-const Sidebar = () => {
+import { Link } from "react-router-dom";
+const Sidebar = ({ sidebar }) => {
   return (
-    <div className="sidebar">
+    <div className={`sidebar ${sidebar ? "" : "small-sidebar"}`}>
       <div className="home-links">
         <div className="side-link">
-          <img src={home} alt="home-icon" />
-          <p>Home</p>
+          <Link to="/">
+            <img src={home} alt="home-icon" />
+            <p>Home</p>
+          </Link>
         </div>
         <div className="side-link">
-          <img src={shorts} alt="shorts-icon" />
-          <p>Shorts</p>
+          <Link to="/shorts">
+            <img src={shorts} alt="shorts-icon" />
+            <p>Shorts</p>
+          </Link>
         </div>
         <div className="side-link">
-          <img src={subscription} alt="subscription-icon" />
-          <p>Subcriptions</p>
+          <Link to="/subscriptions">
+            <img src={subscription} alt="subscription-icon" />
+            <p>Subscriptions</p>
+          </Link>
         </div>
         <div className="side-link">
-          <img src={music} alt="music-icon" />
-          <p>YouTube Music</p>
+          <Link to="/music">
+            <img src={music} alt="music-icon" />
+            <p>YouTube Music</p>
+          </Link>
         </div>
         <hr />
       </div>
@@ -54,28 +63,40 @@ const Sidebar = () => {
           </h2>
         </div>
         <div className="side-link">
-          <img src={history} alt="history-icon" />
-          <p>History</p>
+          <Link to="/history">
+            <img src={history} alt="history-icon" />
+            <p>History</p>
+          </Link>
         </div>
         <div className="side-link">
-          <img src={playlist} alt="playlist-icon" />
-          <p>Playlists</p>
+          <Link to="/playlists">
+            <img src={playlist} alt="playlist-icon" />
+            <p>Playlists</p>
+          </Link>
         </div>
         <div className="side-link">
-          <img src={video} alt="video-icon" />
-          <p>Your Videos</p>
+          <Link to="/videos">
+            <img src={video} alt="video-icon" />
+            <p>Your Videos</p>
+          </Link>
         </div>
         <div className="side-link">
-          <img src={clock} alt="clock-icon" />
-          <p>Watch later</p>
+          <Link to="/watchlater">
+            <img src={clock} alt="clock-icon" />
+            <p>Watch later</p>
+          </Link>
         </div>
         <div className="side-link">
-          <img src={like} alt="like-icon" />
-          <p>Liked videos</p>
+          <Link to="/likedvideos">
+            <img src={like} alt="like-icon" />
+            <p>Liked videos</p>
+          </Link>
         </div>
         <div className="side-link">
-          <img src={download} alt="download-icon" />
-          <p>Downloads</p>
+          <Link to="/downloads">
+            <img src={download} alt="download-icon" />
+            <p>Downloads</p>
+          </Link>
         </div>
         <hr />
       </div>
@@ -84,24 +105,34 @@ const Sidebar = () => {
           <h2>Subscriptions</h2>
         </div>
         <div className="side-link">
-          <img src={user} alt="user-icon" />
-          <p>Channel 1</p>
+          <Link to="/subscriptions">
+            <img src={user} alt="user-icon" />
+            <p>Channel 1</p>
+          </Link>
         </div>
         <div className="side-link">
-          <img src={user} alt="user-icon" />
-          <p>Channel 2</p>
+          <Link to="/subscriptions">
+            <img src={user} alt="user-icon" />
+            <p>Channel 2</p>
+          </Link>
         </div>
         <div className="side-link">
-          <img src={user} alt="user-icon" />
-          <p>Channel 3</p>
+          <Link to="/subscriptions">
+            <img src={user} alt="user-icon" />
+            <p>Channel 3</p>
+          </Link>
         </div>
         <div className="side-link">
-          <img src={user} alt="user-icon" />
-          <p>Channel 4</p>
+          <Link to="/subscriptions">
+            <img src={user} alt="user-icon" />
+            <p>Channel 4</p>
+          </Link>
         </div>
         <div className="side-link">
-          <img src={user} alt="user-icon" />
-          <p>Channel n</p>
+          <Link to="/subscriptions">
+            <img src={user} alt="user-icon" />
+            <p>Channel 5</p>
+          </Link>
         </div>
         <hr />
       </div>
@@ -110,24 +141,34 @@ const Sidebar = () => {
           <h2>Explore</h2>
         </div>
         <div className="side-link">
-          <img src={trending} alt="trending-icon" />
-          <p>Trending</p>
+          <Link to="/trending">
+            <img src={trending} alt="trending-icon" />
+            <p>Trending</p>
+          </Link>
         </div>
         <div className="side-link">
-          <img src={musicnote} alt="music-note-icon" />
-          <p>Music</p>
+          <Link to="/music">
+            <img src={musicnote} alt="music-note-icon" />
+            <p>Music</p>
+          </Link>
         </div>
         <div className="side-link">
-          <img src={gaming} alt="gaming-icon" />
-          <p>Gaming</p>
+          <Link to="/gaming">
+            <img src={gaming} alt="gaming-icon" />
+            <p>Gaming</p>
+          </Link>
         </div>
         <div className="side-link">
-          <img src={news} alt="news-icon" />
-          <p>News</p>
+          <Link to="/news">
+            <img src={news} alt="news-icon" />
+            <p>News</p>
+          </Link>
         </div>
         <div className="side-link">
-          <img src={trophy} alt="sports-icon" />
-          <p>Sports</p>
+          <Link to="/sports">
+            <img src={trophy} alt="sports-icon" />
+            <p>Sports</p>
+          </Link>
         </div>
         <hr />
       </div>
@@ -136,35 +177,49 @@ const Sidebar = () => {
           <h2>More from Youtube</h2>
         </div>
         <div className="side-link">
-          <img src={studio} alt="studio-icon" />
-          <p>YouTube Studio</p>
+          <Link to="/studio">
+            <img src={studio} alt="studio-icon" />
+            <p>YouTube Studio</p>
+          </Link>
         </div>
         <div className="side-link">
-          <img src={ytmusic} alt="ytmusic-icon" />
-          <p>YouTube Music</p>
+          <Link to="/music">
+            <img src={ytmusic} alt="ytmusic-icon" />
+            <p>YouTube Music</p>
+          </Link>
         </div>
         <div className="side-link">
-          <img src={kid} alt="kid-icon" />
-          <p>YouTube Kids</p>
+          <Link to="/kids">
+            <img src={kid} alt="kid-icon" />
+            <p>YouTube Kids</p>
+          </Link>
         </div>
         <hr />
       </div>
       <div className="setting-links">
         <div className="side-link">
-          <img src={setting} alt="setting-icon" />
-          <p>Setting</p>
+          <Link to="/setting">
+            <img src={setting} alt="setting-icon" />
+            <p>Setting</p>
+          </Link>
         </div>
         <div className="side-link">
-          <img src={flag} alt="flag-icon" />
-          <p>Report history</p>
+          <Link to="/report">
+            <img src={flag} alt="flag-icon" />
+            <p>Report history</p>
+          </Link>
         </div>
         <div className="side-link">
-          <img src={question} alt="question-icon" />
-          <p>Help</p>
+          <Link to="/help">
+            <img src={question} alt="question-icon" />
+            <p>Help</p>
+          </Link>
         </div>
         <div className="side-link">
-          <img src={message} alt="message-icon" />
-          <p>Send feedback</p>
+          <Link to="/feedback">
+            <img src={message} alt="message-icon" />
+            <p>Send feedback</p>
+          </Link>
         </div>
         <hr />
       </div>

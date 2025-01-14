@@ -11,12 +11,18 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 
-const Navbar = () => {
+const Navbar = ({ setSidebar }) => {
   return (
     <nav className="flex-div">
       <div className="nav-left flex-div">
         <button className="menu-btn">
-          <FontAwesomeIcon icon={faBars} className="menu-icon" />
+          <FontAwesomeIcon
+            icon={faBars}
+            className="menu-icon"
+            onClick={() =>
+              setSidebar((prev) => (prev === false ? true : false))
+            }
+          />
         </button>
         <img className="logo" src={logo} alt="logo" />
       </div>
