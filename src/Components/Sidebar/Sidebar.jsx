@@ -25,6 +25,8 @@ import question from "../../assets/icons8-question-50.png";
 import message from "../../assets/message.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
+
 const Sidebar = () => {
   return (
     <div className="sidebar">
@@ -109,10 +111,10 @@ const Sidebar = () => {
         <div className="side-link">
           <h2>Explore</h2>
         </div>
-        <div className="side-link">
+        <Link to="/trending" className="side-link">
           <img src={trending} alt="trending-icon" />
           <p>Trending</p>
-        </div>
+        </Link>
         <div className="side-link">
           <img src={musicnote} alt="music-note-icon" />
           <p>Music</p>
