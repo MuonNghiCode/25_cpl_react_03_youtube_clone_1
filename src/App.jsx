@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Video from "./Pages/Video/Video";
 import MainLayout from "./layouts/MainLayout";
+import Trending from "./Pages/Trending/Trending";
 
 function App() {
   return (
@@ -21,6 +22,14 @@ function App() {
         element={
           <MainLayout>
             <Video />
+          </MainLayout>
+        }
+      />
+      <Route
+        path="/trending"
+        element={
+          <MainLayout>
+            <Trending />
           </MainLayout>
         }
       />
