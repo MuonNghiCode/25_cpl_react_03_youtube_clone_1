@@ -1,0 +1,63 @@
+.short-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; 
+  overflow-y: scroll; 
+  scroll-snap-type: y mandatory; 
+}
+
+.shorts-card {
+  width: 100%;
+  height: 100vh; 
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start; 
+  padding: 20px;
+  box-sizing: border-box; 
+}
+
+.shorts-video {
+  margin-left: 200px;
+  margin-top: 60px;
+  width: 80%; 
+  height: auto; 
+  max-height: 80%; 
+  object-fit: contain; 
+}
+
+.shorts-info {
+  color: white;
+  margin-top: 10px;
+}
+
+.shorts-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.shorts-channel {
+  font-size: 1rem;
+  color: #aaa;
+}
+
+.shorts-actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.shorts-actions button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.shorts-actions button:hover {
+  color: #ff4d4d;
+}
