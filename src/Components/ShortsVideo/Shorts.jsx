@@ -1,0 +1,38 @@
+import React, { useState, useEffect } from "react";
+import "./Shorts.css";
+
+import short1 from "../../assets/short1.mp4";
+import short2 from "../../assets/short2.mp4";
+import short3 from "../../assets/short3.mp4";
+
+const Shorts = () => {
+  const [videos, setVideos] = useState([]);
+
+  useEffect(() => {
+    setVideos([
+      { id: 1, src: short1, title: "Short Video 1", channelName: "MartiniAsphalt" },
+      { id: 2, src: short2, title: "Short Video 2", channelName: "Damitz2k" },
+      { id: 3, src: short3, title: "Short Video 3", channelName: "NoCopyrightSounds" },
+    ]);
+  }, []);
+
+  return (
+    <div className="short-container">
+      {videos.map((video) => (
+        <div key={video.id} className="shorts-card">
+          <video
+            src={video.src}
+            controls
+            className="shorts-video"
+          />
+          <div className="shorts-info">
+            <h3 className="shorts-title">{video.title}</h3>
+            <p className="shorts-channel">{video.channelName}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default Shorts;
