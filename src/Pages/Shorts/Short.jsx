@@ -4,7 +4,7 @@ import Shorts from "../../Components/Shorts/Shorts";
 const Short = ({ sidebar }) => {
   return (
     <>
-      <div>
+      <div className="short-container">
         <Shorts />
       </div>
     </>
