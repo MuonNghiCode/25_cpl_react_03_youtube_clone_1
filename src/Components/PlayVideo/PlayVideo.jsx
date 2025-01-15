@@ -1,5 +1,5 @@
 import React from "react";
-import "./PlayVideo.css";
+import "../PlayVideo/PlayVideo.css";
 import video1 from "../../assets/video.mp4";
 import like from "../../assets/thumb-up.png";
 import dislike from "../../assets/dislike1.png";
