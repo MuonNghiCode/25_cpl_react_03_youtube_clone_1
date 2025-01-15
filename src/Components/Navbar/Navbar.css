@@ -112,3 +112,41 @@ nav {
 .nav-right .user-icon:hover {
   background: #dcdcdc;
 }
+.dropDownCreate{
+  position: absolute;
+  margin-top: 190px;
+  top: 4.5 rem;
+  right: 1.5 rem;
+  width: 180px;
+  padding: 15px;
+  border-radius:8px ;
+  background-color: white;
+  border: 1px solid gray;
+  user-select: none;
+  cursor: pointer;
+}
+.dropDownCreate::before{
+  
+  position: absolute;
+  top: -0.7 rem;
+  right: 1.1 rem;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  background-color: white;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+}
+.listCategory {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0;
+}
+.listCategory li {
+  display: flex; 
+  align-items: center; 
+  padding: 10px 0; 
+}
+.listCategory .icon{
+    margin-right: 20px;
+}
