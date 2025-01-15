@@ -6,6 +6,7 @@
   top: 0;
   /* padding-left: 2%; */
   padding-top: 60px;
+  z-index: 9;
 }
 
 .sidebar hr {
@@ -79,7 +80,8 @@
 }
 
 .small-sidebar {
-  width: 100px;
+  padding-left: 5px;
+  width: 80px;
   height: 100%;
 }
 
