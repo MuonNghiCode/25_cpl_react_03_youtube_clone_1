@@ -1,24 +1,38 @@
 import React from "react";
-import Navbar from "./Components/Navbar/Navbar";
-import Sidebar from "./Components/Sidebar/Sidebar";
 import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Video from "./Pages/Video/Video";
-import Trending from "./Pages/Trending";
+import MainLayout from "./layouts/MainLayout";
+import Trending from "./Pages/Trending/Trending";
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <div style={{ display: 'flex' }}>
-        <Sidebar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/video/:categoriesId/:videoId" element={<Video />} />
-          <Route path="/trending" element={<Trending />} />
-        </Routes>
-      </div>
-    </div>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <MainLayout>
+            <Home />
+          </MainLayout>
+        }
+      />
+      <Route
+        path="/video/:categoriesId/:videoId"
+        element={
+          <MainLayout>
+            <Video />
+          </MainLayout>
+        }
+      />
+      <Route
+        path="/trending"
+        element={
+          <MainLayout>
+            <Trending />
+          </MainLayout>
+        }
+      />
+    </Routes>
   );
 }
 

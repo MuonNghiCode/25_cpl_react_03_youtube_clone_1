@@ -10,15 +10,24 @@ import {
   faSearch,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ setSidebar }) => {
   return (
     <nav className="flex-div">
       <div className="nav-left flex-div">
         <button className="menu-btn">
-          <FontAwesomeIcon icon={faBars} className="menu-icon" />
+          <FontAwesomeIcon
+            icon={faBars}
+            className="menu-icon"
+            onClick={() =>
+              setSidebar((prev) => (prev === false ? true : false))
+            }
+          />
         </button>
-        <img className="logo" src={logo} alt="logo" />
+        <Link to="/">
+          <img className="logo" src={logo} alt="logo" />
+        </Link>
       </div>
       <div className="nav-middle flex-div">
         <div className="search-box flex-div">
