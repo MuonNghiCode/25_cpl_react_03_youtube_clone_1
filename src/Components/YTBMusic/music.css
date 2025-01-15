@@ -1,0 +1,55 @@
+.music {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column-gap: 16px;
+  grid-row-gap: 30px;
+  margin-top: 15px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+}
+
+.card .icon {
+  margin-right: 10px;
+}
+
+.card-content-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.card h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  margin: 5px 0;
+}
+
+.card h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+  margin: 6px 0;
+}
+
+.card p {
+  font-size: 14px;
+}
