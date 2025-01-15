@@ -8,7 +8,9 @@ const Home = ({ sidebar }) => {
       <div className={`container ${sidebar ? "large-container" : ""}`}>
         <Feed />
       </div>
-      <ShortsLayout />
+      <div className="ml-[220px]">
+        <ShortsLayout />
+      </div>
     </>
   );
 };

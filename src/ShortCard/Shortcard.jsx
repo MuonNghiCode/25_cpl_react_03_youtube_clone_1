@@ -1,44 +1,13 @@
-import { useState } from "react";
-import { useEffect } from "react";
-import short1 from "../assets/short1.mp4";
-const Shortcard = () => {
-  const [videos, setVideos] = useState([]);
-
-  useEffect(() => {
-    setVideos([
-      {
-        id: 1,
-        src: short1,
-        title: "Short Video 1",
-        channelName: "MartiniAsphalt",
-      },
-    ]);
-  }, []);
+const Shortcard = ({ src, title, channelName }) => {
   return (
-    <div>
-      {videos.map((video) => (
-        <div className="shorts-card">
-          <video src={video.src} controls className="shorts-video" />
-          <div className="shorts-info">
-            <h3 className="shorts-title">{video.title}</h3>
-            <p className="shorts-channel">{video.channelName}</p>
-          </div>
-          <div className="shorts-actions">
-            <button className="shorts-like">
-              👍
-              <span>Like</span>
-            </button>
-            <button className="shorts-dislike">
-              👎
-              <span>Dislike</span>
-            </button>
-            <button className="shorts-share">
-              🔗
-              <span>Share</span>
-            </button>
-          </div>
-        </div>
-      ))}
+    <div className="w-full h-full bg-white flex justify-center items-center relative ">
+      <div className="w-full h-full bg-black flex absolute top-0 rounded-2xl">
+        <video src={src} controls className="h-5/6" />
+      </div>
+      <div className="absolute bottom-0 p-2 bg-black bg-opacity-50 text-white">
+        <h3 className="shorts-title">{title}</h3>
+        <p className="shorts-channel">{channelName}</p>
+      </div>
     </div>
   );
 };

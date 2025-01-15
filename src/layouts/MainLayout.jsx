@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../Components/Navbar/Navbar";
 import Sidebar from "../Components/Sidebar/Sidebar";
+import ShortsLayout from "./ShortsLayout";
 
 const MainLayout = ({ children }) => {
   const [sidebar, setSidebar] = useState(true);
