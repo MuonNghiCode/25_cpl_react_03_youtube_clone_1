@@ -5,6 +5,8 @@ import Video from "./Pages/Video/Video";
 import MainLayout from "./layouts/MainLayout";
 import Short from "./Pages/Shorts/Short";
 import Music from "./Pages/YTBMusic/Music";
+import Trending from "./Pages/Trending/Trending";
+
 function App() {
   return (
     <Routes>
@@ -39,7 +41,15 @@ function App() {
             <Music />
           </MainLayout>
         } >
-        </Route>
+        </Route>   
+      <Route
+        path="/trending"
+        element={
+          <MainLayout>
+            <Trending />
+          </MainLayout>
+        }
+      />
     </Routes>
   );
 }
