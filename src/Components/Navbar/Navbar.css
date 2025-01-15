@@ -150,3 +150,58 @@ nav {
 .listCategory .icon{
     margin-right: 20px;
 }
+.divider {
+  height: 1px;
+  width: 100%;
+  background: #f0f0f0;
+}
+.user-dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 300px;
+  z-index: 1000;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 15px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+button {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+}
+
+.search-box .search-btn {
+  border-left: 1px solid #ccc;
+}
+.search-box .search-btn,
+.search-box .microphone-btn {
+  cursor: pointer;
+}

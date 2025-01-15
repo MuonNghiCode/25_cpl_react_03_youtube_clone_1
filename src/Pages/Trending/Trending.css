@@ -1,0 +1,101 @@
+.container {
+  background: #ffffff;
+  padding: 80px 2% 20px 120px;
+  height: 100%;
+}
+
+.large-container {
+  background: #ffffff;
+  padding-left: 220px;
+  height: 100%;
+}
+
+.trending {
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.title h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.tab-container {
+  position: sticky;
+  top: 56px;
+  z-index: 1;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+}
+
+.tab {
+  background: none;
+  border: none;
+  color: #606060;
+  padding: 8px 32px;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+  font-weight: 500;
+}
+
+.tab:hover {
+  color: #0f0f0f;
+}
+
+.tab.active {
+  color: #0f0f0f;
+}
+
+.tab.active::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #0f0f0f;
+}
+.video {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  align-items: flex-start;
+}
+
+.video img {
+  width: 200px;
+  height: 100px;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.video-info {
+  max-width: 600px;
+  width: 70%;
+}
+
+.video-info h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.video-info p {
+  margin: 5px 0;
+  color: #555;
+}
