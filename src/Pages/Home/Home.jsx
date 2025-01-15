@@ -2,7 +2,6 @@
 import "./Home.css";
 import Feed from "../../Components/Feed/Feed";
 import CategoriesList from "./CategoriesList";
-
 import ShortsLayout from "../../layouts/ShortsLayout";
 const Home = ({ sidebar }) => {
   return (

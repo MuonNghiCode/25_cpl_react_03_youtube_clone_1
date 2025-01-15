@@ -3,7 +3,6 @@ import "./Navbar.css";
 import logo from "../../assets/youtube-logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import DropDownCreate from "./DropDownCreate";
-
 import {
   faAddressCard,
   faBars,

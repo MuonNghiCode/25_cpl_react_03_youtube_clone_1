@@ -42,5 +42,4 @@
       </div>
     );
   };
-
   export default CategoriesList;

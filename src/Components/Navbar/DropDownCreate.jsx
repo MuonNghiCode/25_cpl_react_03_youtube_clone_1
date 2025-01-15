@@ -1,13 +1,8 @@
 import React from "react";
 import "./Navbar.css";
-
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
- 
-    faCirclePlay,faPencilSquare,faHeadset
+import { faCirclePlay , faPencilSquare , faHeadset } from "@fortawesome/free-solid-svg-icons";
 
-  } from "@fortawesome/free-solid-svg-icons";
 const DropDownCreate = () => {
     return (
         <div className="dropDownCreate">
