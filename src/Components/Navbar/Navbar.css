@@ -1,0 +1,154 @@
+nav {
+  padding: 10px 2%;
+  justify-content: space-between;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  height: 60px;
+  width: 100%;
+}
+
+.nav-left .menu-btn {
+  background: #fdfdfd;
+  border: none;
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+  border-radius: 20px;
+  transition: background ease 0.3s;
+  cursor: pointer;
+}
+
+.nav-left .menu-btn:hover {
+  background: #dcdcdc;
+}
+
+.nav-left .menu-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.nav-left .logo {
+  height: 150px;
+  width: 150x;
+}
+
+.nav-middle .search-box {
+  border: 1px solid #ccc;
+  margin-right: 15px;
+  padding: 8px 12px;
+  border-radius: 25px;
+}
+
+.nav-middle .microphone-icon {
+  height: 20px;
+  width: 20px;
+  padding: 8px;
+  background: #f0f0f0;
+  border-radius: 50%;
+  transition: background ease 0.3s;
+}
+
+.nav-middle .microphone-icon:hover {
+  background: #dcdcdc;
+}
+
+.nav-middle .icon {
+  border-left: 1px solid #ccc;
+}
+
+.nav-middle .search-icon {
+  margin-left: 7px;
+  height: 15px;
+  width: 15px;
+}
+
+.nav-middle .search-box input {
+  width: 400px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-right .create-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: #f0f0f0;
+  border-radius: 20px;
+  padding: 8px 12px;
+  transition: background ease 0.3s;
+  cursor: pointer;
+}
+
+.nav-right .create-container:hover {
+  background: #dcdcdc;
+}
+
+.nav-right .bell-icon,
+.nav-right .user-icon,
+.nav-right .plus-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.nav-right .bell-icon,
+.nav-right .user-icon {
+  cursor: pointer;
+  background: #fdfdfd;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.nav-right .bell-icon:hover,
+.nav-right .user-icon:hover {
+  background: #dcdcdc;
+}
+.divider {
+  height: 1px;
+  width: 100%;
+  background: #f0f0f0;
+}
+.user-dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 300px;
+  z-index: 1000;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 15px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+}
