@@ -24,7 +24,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faGoogle, faSquareYoutube } from "@fortawesome/free-brands-svg-icons";
 
-const Navbar = () => {
+import { Link } from "react-router-dom";
+
+const Navbar = ({ setSidebar }) => {
   const [userDropdown, setUserDropdown] = useState(false);
   const toogleDropdown = () => {
     setUserDropdown(!userDropdown);
@@ -33,9 +35,17 @@ const Navbar = () => {
     <nav className="flex-div">
       <div className="nav-left flex-div">
         <button className="menu-btn">
-          <FontAwesomeIcon icon={faBars} className="menu-icon" />
+          <FontAwesomeIcon
+            icon={faBars}
+            className="menu-icon"
+            onClick={() =>
+              setSidebar((prev) => (prev === false ? true : false))
+            }
+          />
         </button>
-        <img className="logo" src={logo} alt="logo" />
+        <Link to="/">
+          <img className="logo" src={logo} alt="logo" />
+        </Link>
       </div>
       <div className="nav-middle flex-div">
         <div className="search-box flex-div">

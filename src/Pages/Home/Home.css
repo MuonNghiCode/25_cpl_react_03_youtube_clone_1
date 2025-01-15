@@ -1,0 +1,11 @@
+.container {
+  background: #ffffff;
+  padding: 80px 2% 20px 120px;
+  height: 100%;
+}
+
+.large-container {
+  background: #ffffff;
+  padding-left: 220px;
+  height: 100%;
+}

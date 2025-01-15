@@ -6,7 +6,7 @@ nav {
   position: fixed;
   top: 0;
   z-index: 10;
-  height: 80px;
+  height: 60px;
   width: 100%;
 }
 
@@ -83,8 +83,8 @@ nav {
   align-items: center;
   gap: 5px;
   background: #f0f0f0;
-  border-radius: 15px;
-  padding: 8px;
+  border-radius: 20px;
+  padding: 8px 12px;
   transition: background ease 0.3s;
   cursor: pointer;
 }
