@@ -27,26 +27,42 @@ function App() {
         }
       />
       <Route
-        path="/shorts" 
+        path="/shorts"
         element={
           <MainLayout>
-            <Short/>
+            <Short />
           </MainLayout>
-        } >
-      </Route>
-        <Route
+        }
+      ></Route>
+      <Route
         path="/music"
         element={
           <MainLayout>
             <Music />
           </MainLayout>
-        } >
-        </Route>   
+        }
+      ></Route>
       <Route
         path="/trending"
         element={
           <MainLayout>
             <Trending />
+          </MainLayout>
+        }
+      />
+      <Route
+        path="/feed/video/:categoriesId/:videoId"
+        element={
+          <MainLayout>
+            <Video />
+          </MainLayout>
+        }
+      />
+      <Route
+        path="/feed"
+        element={
+          <MainLayout>
+            <Home />
           </MainLayout>
         }
       />

@@ -5,7 +5,7 @@ import short1 from "../../assets/short1.mp4";
 import short2 from "../../assets/short2.mp4";
 import short3 from "../../assets/short3.mp4";
 
-const Shorts = () => {
+const Shorts = ({ sidebar }) => {
   const [videos, setVideos] = useState([]);
   const videoRefs = useRef([]);
 
@@ -61,9 +61,15 @@ const Shorts = () => {
             <p className="shorts-channel">{video.channelName}</p>
           </div>
           <div className="shorts-actions">
-            <button className="shorts-like">👍<span>Like</span></button>
-            <button className="shorts-dislike">👎<span>Dislike</span></button>
-            <button className="shorts-share">🔗<span>Share</span></button>
+            <button className="shorts-like">
+              👍<span>Like</span>
+            </button>
+            <button className="shorts-dislike">
+              👎<span>Dislike</span>
+            </button>
+            <button className="shorts-share">
+              🔗<span>Share</span>
+            </button>
           </div>
         </div>
       ))}

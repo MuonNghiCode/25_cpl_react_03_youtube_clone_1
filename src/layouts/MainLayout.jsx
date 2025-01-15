@@ -7,23 +7,13 @@ const MainLayout = ({ children }) => {
   const [sidebar, setSidebar] = useState(true);
   const location = useLocation();
 
-  useEffect(() => {
-    if (location.pathname === "/") {
-      setSidebar(true);
-    } else {
-      setSidebar(false);
-    }
-  }, [location]);
-
   return (
     <div>
       <Navbar setSidebar={setSidebar} />
       <div>
-        {sidebar && (
-          <aside>
-            <Sidebar sidebar={sidebar} />
-          </aside>
-        )}
+        <aside>
+          <Sidebar sidebar={sidebar} />
+        </aside>
 
         <main>{React.cloneElement(children, { sidebar })}</main>
       </div>

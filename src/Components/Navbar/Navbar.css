@@ -152,3 +152,18 @@ nav {
   width: 20px;
   height: 20px;
 }
+
+button {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+}
+
+.search-box .search-btn {
+  border-left: 1px solid #ccc;
+}
+.search-box .search-btn,
+.search-box .microphone-btn {
+  cursor: pointer;
+}
