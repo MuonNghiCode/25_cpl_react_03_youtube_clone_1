@@ -1,6 +1,6 @@
 import React from "react";
 import "./Video.css";
-import PlayVideo from "../../Components/PlayVideo/PlayVideo";
+import PlayVideo from "../../Components/playvideo/playvideo";
 import Recommended from "../../Components/Recommended/Recommended";
 
 const Video = ({ sidebar }) => {
