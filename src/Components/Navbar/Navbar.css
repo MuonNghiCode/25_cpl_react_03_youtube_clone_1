@@ -124,11 +124,7 @@ nav {
 
 .dropdown-menu {
   position: absolute;
-<<<<<<< HEAD
   top: 50px; /* Điều chỉnh khoảng cách so với icon */
-=======
-  top: 50px;
->>>>>>> fc708f677f9ba56c6580f411dd21b90b4550e43b
   right: 0;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -142,11 +138,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 20px;
-<<<<<<< HEAD
   padding: 10px 15px;
-=======
-  padding: 12px 15px;
->>>>>>> fc708f677f9ba56c6580f411dd21b90b4550e43b
   font-size: 16px;
   color: #333;
   cursor: pointer;
@@ -160,7 +152,6 @@ nav {
   width: 20px;
   height: 20px;
 }
-<<<<<<< HEAD
 
 button {
   border: none;
@@ -168,5 +159,12 @@ button {
   outline: none;
   padding: 0;
 }
-=======
->>>>>>> fc708f677f9ba56c6580f411dd21b90b4550e43b
+
+.search-box .search-btn {
+  border-left: 1px solid #ccc;
+}
+
+.search-box .search-btn,
+.search-box .microphone-btn {
+  cursor: pointer;
+}
