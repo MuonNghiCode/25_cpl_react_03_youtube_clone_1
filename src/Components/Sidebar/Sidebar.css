@@ -80,7 +80,8 @@
 }
 
 .small-sidebar {
-  width: 100px;
+  padding-left: 5px;
+  width: 80px;
   height: 100%;
 }
 

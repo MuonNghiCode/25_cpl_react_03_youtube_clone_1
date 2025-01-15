@@ -3,9 +3,9 @@ import "./Video.css";
 import PlayVideo from "../../Components/PlayVideo/PlayVideo";
 import Recommended from "../../Components/Recommended/Recommended";
 
-const Video = () => {
+const Video = ({ sidebar }) => {
   return (
-    <div className="play-container">
+    <div className={`play-container ${sidebar ? "large-play-container" : ""}`}>
       <PlayVideo />
       <Recommended />
     </div>

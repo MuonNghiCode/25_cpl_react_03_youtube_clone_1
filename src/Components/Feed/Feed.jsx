@@ -301,7 +301,7 @@ const Feed = () => {
           </div>
         </div>
       </div>
-      <div className="card">
+      <Link to={`video/18/456`} className="card">
         <img src={thumbnail7} alt="thumbnail1" />
         <div className="card-content">
           <div className="card-header">
@@ -313,8 +313,8 @@ const Feed = () => {
             <p>Video Description (total views + upload date)</p>
           </div>
         </div>
-      </div>
-      <div className="card">
+      </Link>
+      <Link to={`video/19/123`} className="card">
         <img src={thumbnail8} alt="thumbnail1" />
         <div className="card-content">
           <div className="card-header">
@@ -326,7 +326,7 @@ const Feed = () => {
             <p>Video Description (total views + upload date)</p>
           </div>
         </div>
-      </div>
+      </Link>
       <Link to={`video/20/4521`} className="card">
         <img src={thumbnail1} alt="thumbnail1" />
         <div className="card-content">
