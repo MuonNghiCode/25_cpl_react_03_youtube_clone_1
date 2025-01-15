@@ -4,7 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Video from "./Pages/Video/Video";
 import MainLayout from "./layouts/MainLayout";
-
+import Music from "./Pages/YTBMusic/Music";
 function App() {
   return (
     <Routes>
@@ -21,6 +21,14 @@ function App() {
         element={
           <MainLayout>
             <Video />
+          </MainLayout>
+        }
+      />
+      <Route
+        path="/music"
+        element={
+          <MainLayout>
+            <Music />
           </MainLayout>
         }
       />
