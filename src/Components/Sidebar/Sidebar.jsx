@@ -37,12 +37,6 @@ const Sidebar = ({ sidebar }) => {
           </Link>
         </div>
         <div className="side-link">
-          <Link to="/">
-            <img src={home} alt="home-icon" />
-            <p>Home</p>
-          </Link>
-        </div>
-        <div className="side-link">
           <Link to="/shorts">
             <img src={shorts} alt="shorts-icon" />
             <p>Shorts</p>
