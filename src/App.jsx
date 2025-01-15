@@ -24,7 +24,6 @@ function App() {
         }
       />
       <Route
-<<<<<<< HEAD
         path="/feed/video/:categoriesId/:videoId"
         element={
           <MainLayout>
@@ -37,12 +36,6 @@ function App() {
         element={
           <MainLayout>
             <Home />
-=======
-        path="/music"
-        element={
-          <MainLayout>
-            <Music />
->>>>>>> fc708f677f9ba56c6580f411dd21b90b4550e43b
           </MainLayout>
         }
       />

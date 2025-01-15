@@ -24,7 +24,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faGoogle, faSquareYoutube } from "@fortawesome/free-brands-svg-icons";
 
-<<<<<<< HEAD
 import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = ({ setSidebar }) => {
@@ -54,15 +53,6 @@ const Navbar = ({ setSidebar }) => {
     }
   };
 
-=======
-import { Link } from "react-router-dom";
-
-const Navbar = ({ setSidebar }) => {
-  const [userDropdown, setUserDropdown] = useState(false);
-  const toogleDropdown = () => {
-    setUserDropdown(!userDropdown);
-  };
->>>>>>> fc708f677f9ba56c6580f411dd21b90b4550e43b
   return (
     <nav className="flex-div">
       <div className="nav-left flex-div">
@@ -114,19 +104,6 @@ const Navbar = ({ setSidebar }) => {
             <div className="dropdown-menu">
               <div className="dropdown-item">
                 <FontAwesomeIcon icon={faGoogle} className="icon" />
-<<<<<<< HEAD
-                Tài khoản Google
-              </div>
-              <div className="dropdown-item">
-                <FontAwesomeIcon icon={faAddressCard} className="icon" />
-                Chuyển đổi tài khoản
-              </div>
-              <div className="dropdown-item">
-                <FontAwesomeIcon icon={faRightFromBracket} className="icon" />
-                Đăng xuất
-              </div>
-              <div className="divider"></div>
-=======
                 Google Account
               </div>
               <div className="dropdown-item">
@@ -138,51 +115,12 @@ const Navbar = ({ setSidebar }) => {
                 Sign out
               </div>
               <hr />
->>>>>>> fc708f677f9ba56c6580f411dd21b90b4550e43b
               <div className="dropdown-item">
                 <FontAwesomeIcon icon={faSquareYoutube} className="icon" />
                 Youtube Studio
               </div>
               <div className="dropdown-item">
                 <FontAwesomeIcon icon={faDollarSign} className="icon" />
-<<<<<<< HEAD
-                Giao dịch và mua gói thành viên
-              </div>
-              <div className="divider"></div>
-              <div className="dropdown-item">
-                <FontAwesomeIcon icon={faUserShield} className="icon" />
-                Dữ liệu của bạn trong Youtube
-              </div>
-              <div className="dropdown-item">
-                <FontAwesomeIcon icon={faMoon} className="icon" />
-                Giao diện: Đen
-              </div>
-              <div className="dropdown-item">
-                <FontAwesomeIcon icon={faLanguage} className="icon" />
-                Ngôn ngữ: Tiếng việt
-              </div>
-              <div className="dropdown-item">
-                <FontAwesomeIcon icon={faShield} className="icon" />
-                Chế độ hạn chế: Đã tắt
-              </div>
-              <div className="dropdown-item">
-                <FontAwesomeIcon icon={faGlobe} className="icon" />
-                Địa điểm: Việt Nam
-              </div>
-              <div className="dropdown-item">
-                <FontAwesomeIcon icon={faKeyboard} className="icon" />
-                Phím tắt
-              </div>
-              <div className="divider"></div>
-              <div className="dropdown-item">
-                <FontAwesomeIcon icon={faGear} className="icon" />
-                Cài đặt
-              </div>
-              <div className="divider"></div>
-              <div className="dropdown-item">
-                <FontAwesomeIcon icon={faCircleQuestion} className="icon" />
-                Trợ giúp
-=======
                 Your Premium benefits
               </div>
               <div className="dropdown-item">
@@ -219,18 +157,13 @@ const Navbar = ({ setSidebar }) => {
               <div className="dropdown-item">
                 <FontAwesomeIcon icon={faCircleQuestion} className="icon" />
                 Help
->>>>>>> fc708f677f9ba56c6580f411dd21b90b4550e43b
               </div>
               <div className="dropdown-item">
                 <FontAwesomeIcon
                   icon={faTriangleExclamation}
                   className="icon"
                 />
-<<<<<<< HEAD
-                Gửi ý kiến phản hồi
-=======
                 Send feedback
->>>>>>> fc708f677f9ba56c6580f411dd21b90b4550e43b
               </div>
             </div>
           )}
