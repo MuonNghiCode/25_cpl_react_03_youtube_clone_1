@@ -115,13 +115,17 @@ const Sidebar = () => {
           <img src={trending} alt="trending-icon" />
           <p>Trending</p>
         </Link>
+        <Link to="/trending/gaming" className="side-link">
+          <img src={gaming} alt="gaming-icon" />
+          <p>Gaming</p>
+        </Link>
+        <Link to="/trending/films" className="side-link">
+          <img src={trending} alt="trending-icon" />
+          <p>Films</p>
+        </Link>
         <div className="side-link">
           <img src={musicnote} alt="music-note-icon" />
           <p>Music</p>
-        </div>
-        <div className="side-link">
-          <img src={gaming} alt="gaming-icon" />
-          <p>Gaming</p>
         </div>
         <div className="side-link">
           <img src={news} alt="news-icon" />

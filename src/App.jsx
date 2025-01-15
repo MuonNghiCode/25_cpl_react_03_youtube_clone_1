@@ -4,7 +4,7 @@ import Sidebar from "./Components/Sidebar/Sidebar";
 import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Video from "./Pages/Video/Video";
-import Trending from "./Pages/Trending";
+import Trending from "./Pages/Trending/index";
 
 function App() {
   return (
@@ -15,11 +15,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/video/:categoriesId/:videoId" element={<Video />} />
-          <Route path="/trending" element={<Trending />} />
+          <Route path="/trending/*" element={<Trending />} />
         </Routes>
       </div>
     </div>
   );
 }
-
 export default App;
