@@ -14,6 +14,7 @@ const MainLayout = ({ children }) => {
       setSidebar(false);
     }
   }, [location]);
+
   return (
     <div>
       <Navbar setSidebar={setSidebar} />
