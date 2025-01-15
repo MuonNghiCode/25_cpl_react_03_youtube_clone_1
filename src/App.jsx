@@ -4,7 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Video from "./Pages/Video/Video";
 import MainLayout from "./layouts/MainLayout";
-import Short from "./Pages/Shorts/Short";
+import Music from "./Pages/YTBMusic/Music";
 
 function App() {
   return (
@@ -26,13 +26,13 @@ function App() {
         }
       />
       <Route
-        path="/shorts" 
+        path="/music"
         element={
           <MainLayout>
-            <Short/>
+            <Music />
           </MainLayout>
-        } >
-      </Route>
+        }
+      />
     </Routes>
   );
 }
