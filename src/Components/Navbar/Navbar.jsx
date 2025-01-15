@@ -72,66 +72,66 @@ const Navbar = ({ setSidebar }) => {
             <div className="dropdown-menu">
               <div className="dropdown-item">
                 <FontAwesomeIcon icon={faGoogle} className="icon" />
-                Tài khoản Google
+                Google Account
               </div>
               <div className="dropdown-item">
                 <FontAwesomeIcon icon={faAddressCard} className="icon" />
-                Chuyển đổi tài khoản
+                Switch account
               </div>
               <div className="dropdown-item">
                 <FontAwesomeIcon icon={faRightFromBracket} className="icon" />
-                Đăng xuất
+                Sign out
               </div>
-              <div className="divider"></div>
+              <hr />
               <div className="dropdown-item">
                 <FontAwesomeIcon icon={faSquareYoutube} className="icon" />
                 Youtube Studio
               </div>
               <div className="dropdown-item">
                 <FontAwesomeIcon icon={faDollarSign} className="icon" />
-                Giao dịch và mua gói thành viên
+                Your Premium benefits
               </div>
-              <div className="divider"></div>
               <div className="dropdown-item">
                 <FontAwesomeIcon icon={faUserShield} className="icon" />
-                Dữ liệu của bạn trong Youtube
+                Purchases and memberships
               </div>
+              <hr />
               <div className="dropdown-item">
                 <FontAwesomeIcon icon={faMoon} className="icon" />
-                Giao diện: Đen
+                Appearance: Device theme
               </div>
               <div className="dropdown-item">
                 <FontAwesomeIcon icon={faLanguage} className="icon" />
-                Ngôn ngữ: Tiếng việt
+                Language: English
               </div>
               <div className="dropdown-item">
                 <FontAwesomeIcon icon={faShield} className="icon" />
-                Chế độ hạn chế: Đã tắt
+                Restricted Mode: Off
               </div>
               <div className="dropdown-item">
                 <FontAwesomeIcon icon={faGlobe} className="icon" />
-                Địa điểm: Việt Nam
+                Location: Vietnam
               </div>
               <div className="dropdown-item">
                 <FontAwesomeIcon icon={faKeyboard} className="icon" />
-                Phím tắt
+                Keyboard shortcuts
               </div>
-              <div className="divider"></div>
+              <hr />
               <div className="dropdown-item">
                 <FontAwesomeIcon icon={faGear} className="icon" />
-                Cài đặt
+                Setting
               </div>
-              <div className="divider"></div>
+              <hr />
               <div className="dropdown-item">
                 <FontAwesomeIcon icon={faCircleQuestion} className="icon" />
-                Trợ giúp
+                Help
               </div>
               <div className="dropdown-item">
                 <FontAwesomeIcon
                   icon={faTriangleExclamation}
                   className="icon"
                 />
-                Gửi ý kiến phản hồi
+                Send feedback
               </div>
             </div>
           )}
