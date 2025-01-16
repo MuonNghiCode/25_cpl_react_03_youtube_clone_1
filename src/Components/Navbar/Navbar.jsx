@@ -1,7 +1,8 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import logo from "../../assets/youtube-logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import DropDownCreate from "./DropDownCreate";
 import {
   faAddressCard,
   faBars,
@@ -13,7 +14,7 @@ import {
   faKeyboard,
   faLanguage,
   faMicrophone,
-  faMoon,
+  faCirclePlay,
   faPlus,
   faRightFromBracket,
   faSearch,
@@ -27,6 +28,7 @@ import { faGoogle, faSquareYoutube } from "@fortawesome/free-brands-svg-icons";
 import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = ({ setSidebar }) => {
+  const [openProfile, setOpenProfile] = useState(false);
   const [userDropdown, setUserDropdown] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const navigate = useNavigate();
@@ -91,8 +93,9 @@ const Navbar = ({ setSidebar }) => {
       <div className="nav-right flex-div">
         <div className="create-container">
           <FontAwesomeIcon icon={faPlus} className="plus-icon" />
-          <span>Create</span>
+          <span onClick={() => setOpenProfile((prev) => !prev)}>Create</span>
         </div>
+        {openProfile && <DropDownCreate />}
         <FontAwesomeIcon icon={faBell} className="bell-icon" />
         <div className="user-dropdown-container">
           <FontAwesomeIcon
