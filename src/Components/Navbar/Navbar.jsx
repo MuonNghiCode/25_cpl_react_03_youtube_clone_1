@@ -22,6 +22,7 @@ import {
   faTriangleExclamation,
   faUser,
   faUserShield,
+  faMoon,
 } from "@fortawesome/free-solid-svg-icons";
 import { faGoogle, faSquareYoutube } from "@fortawesome/free-brands-svg-icons";
 
